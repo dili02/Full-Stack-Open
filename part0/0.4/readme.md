@@ -1,6 +1,6 @@
 # SUBMITTING A NEW NOTE
 
-![Solution](./Untiled.png)
+![Untitled](https://user-images.githubusercontent.com/48192073/115466568-a6fc7b00-a206-11eb-8fdf-d711d2ff2f7a.png)
 
 ```
 browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
