@@ -22,7 +22,7 @@ const App = (props) => {
   const maxVotes = () => votes.indexOf(Math.max(...votes));
 
   return (
-    <div>
+    <>
       <h2>Anecdote of the day</h2>
       {typeof props.anecdotes[selected] === "undefined" ? (
         <p>There are no more acnedotes</p>
@@ -37,7 +37,7 @@ const App = (props) => {
       <h2>Anecdote with most votes</h2>
       <Anecdote anecdote={props.anecdotes[maxVotes()]} />
       <Vote votes={votes[maxVotes()]} />
-    </div>
+    </>
   );
 };
 
