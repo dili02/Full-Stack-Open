@@ -1,7 +1,7 @@
 {
   "name": "full-stack-open",
   "version": "1.0.0",
-  "private": false,
+  "private": "false",
   "description": "Bootcamp Full Stack open 2021",
   "author": "Diego Garcia <dili02@gmail.com>"
 }
