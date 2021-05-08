@@ -23,6 +23,7 @@ let persons = [
 
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 
 const requestLogger = require("./middlewares/requestLogger");
 
@@ -30,6 +31,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan(requestLogger));
+app.use(cors());
 
 const generateId = () => {
   return Math.round(Math.random() * 100000);
@@ -90,7 +92,7 @@ const unknownEndpoint = (request, response) =>
   response.status(404).send({ error: "unknown endpoint" });
 app.use(unknownEndpoint);
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

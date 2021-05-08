@@ -18,4 +18,4 @@ These are the excercizes proposed by the program [Full Stack Open](https://fulls
     - Exercise 2.12 - 2.14 countries
 
 - Part 03 **Programming a server with NodeJS and Express**
-    - Exercise 3.1 - 3.8 courseinfo
+    - Exercise 3.1 - 3.8
